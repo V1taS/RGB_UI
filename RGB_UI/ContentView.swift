@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var valueTextFieldRed = ""
+    
+    @State private var valueRed: Double = 73
+    @State private var valueGreen: Double = 146
+    @State private var valueBlue: Double = 219
+    
     var body: some View {
-        Text("Hello, World!")
+        ZStack {
+            Color(red: valueRed / 255, green: valueGreen / 255, blue: valueBlue / 255, opacity: 0.3).edgesIgnoringSafeArea(.all)
+            VStack {
+                CapsuleView(red: valueRed, green: valueGreen, blue: valueBlue)
+                VStack {
+                    BoxSlider(value: $valueRed, valueTextField: $valueTextFieldRed, colorTrack: .red)
+                    
+                    BoxSlider(value: $valueGreen, valueTextField: $valueTextFieldRed, colorTrack: .green)
+                    
+                    BoxSlider(value: $valueBlue, valueTextField: $valueTextFieldRed, colorTrack: .blue)
+                    Spacer()
+                }
+                .padding(.top, 32)
+            }
+            .padding(.top, 130)
+            .padding()
+        }
     }
 }
 

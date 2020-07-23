@@ -13,6 +13,11 @@
 		1B3ED5E024CA081A00C807DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ED5DF24CA081A00C807DC /* Assets.xcassets */; };
 		1B3ED5E324CA081A00C807DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ED5E224CA081A00C807DC /* Preview Assets.xcassets */; };
 		1B3ED5E624CA081A00C807DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B3ED5E424CA081A00C807DC /* LaunchScreen.storyboard */; };
+		1B3ED5F224CA2C2500C807DC /* CapsuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ED5F124CA2C2500C807DC /* CapsuleView.swift */; };
+		1B3ED5F424CA2D0B00C807DC /* TextValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ED5F324CA2D0B00C807DC /* TextValues.swift */; };
+		1B3ED5F624CA2E6600C807DC /* SliderValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ED5F524CA2E6600C807DC /* SliderValues.swift */; };
+		1B3ED5F824CA2FB500C807DC /* TextFieldValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ED5F724CA2FB500C807DC /* TextFieldValues.swift */; };
+		1B3ED5FA24CA33F200C807DC /* BoxSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3ED5F924CA33F200C807DC /* BoxSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		1B3ED5E224CA081A00C807DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1B3ED5E524CA081A00C807DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B3ED5E724CA081A00C807DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B3ED5F124CA2C2500C807DC /* CapsuleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleView.swift; sourceTree = "<group>"; };
+		1B3ED5F324CA2D0B00C807DC /* TextValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextValues.swift; sourceTree = "<group>"; };
+		1B3ED5F524CA2E6600C807DC /* SliderValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValues.swift; sourceTree = "<group>"; };
+		1B3ED5F724CA2FB500C807DC /* TextFieldValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldValues.swift; sourceTree = "<group>"; };
+		1B3ED5F924CA33F200C807DC /* BoxSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +66,16 @@
 		1B3ED5D824CA081700C807DC /* RGB_UI */ = {
 			isa = PBXGroup;
 			children = (
-				1B3ED5D924CA081700C807DC /* AppDelegate.swift */,
-				1B3ED5DB24CA081700C807DC /* SceneDelegate.swift */,
 				1B3ED5DD24CA081700C807DC /* ContentView.swift */,
-				1B3ED5DF24CA081A00C807DC /* Assets.xcassets */,
-				1B3ED5E424CA081A00C807DC /* LaunchScreen.storyboard */,
-				1B3ED5E724CA081A00C807DC /* Info.plist */,
+				1B3ED5F924CA33F200C807DC /* BoxSlider.swift */,
+				1B3ED5F324CA2D0B00C807DC /* TextValues.swift */,
+				1B3ED5F524CA2E6600C807DC /* SliderValues.swift */,
+				1B3ED5F724CA2FB500C807DC /* TextFieldValues.swift */,
+				1B3ED5F124CA2C2500C807DC /* CapsuleView.swift */,
+				1B3ED5EF24CA087100C807DC /* Storyboard */,
+				1B3ED5F024CA089400C807DC /* NativeFiles */,
+				1B3ED5EE24CA086400C807DC /* Other */,
+				1B3ED5ED24CA084F00C807DC /* Source */,
 				1B3ED5E124CA081A00C807DC /* Preview Content */,
 			);
 			path = RGB_UI;
@@ -73,6 +87,39 @@
 				1B3ED5E224CA081A00C807DC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1B3ED5ED24CA084F00C807DC /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1B3ED5DF24CA081A00C807DC /* Assets.xcassets */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1B3ED5EE24CA086400C807DC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1B3ED5E724CA081A00C807DC /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1B3ED5EF24CA087100C807DC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				1B3ED5E424CA081A00C807DC /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		1B3ED5F024CA089400C807DC /* NativeFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1B3ED5D924CA081700C807DC /* AppDelegate.swift */,
+				1B3ED5DB24CA081700C807DC /* SceneDelegate.swift */,
+			);
+			path = NativeFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3ED5F424CA2D0B00C807DC /* TextValues.swift in Sources */,
+				1B3ED5F224CA2C2500C807DC /* CapsuleView.swift in Sources */,
 				1B3ED5DA24CA081700C807DC /* AppDelegate.swift in Sources */,
+				1B3ED5F824CA2FB500C807DC /* TextFieldValues.swift in Sources */,
 				1B3ED5DC24CA081700C807DC /* SceneDelegate.swift in Sources */,
+				1B3ED5F624CA2E6600C807DC /* SliderValues.swift in Sources */,
+				1B3ED5FA24CA33F200C807DC /* BoxSlider.swift in Sources */,
 				1B3ED5DE24CA081700C807DC /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +340,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RGB_UI/Preview Content\"";
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RGB_UI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RGB_UI/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +360,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RGB_UI/Preview Content\"";
 				DEVELOPMENT_TEAM = 34VDSPZYU9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RGB_UI/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RGB_UI/Other/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
