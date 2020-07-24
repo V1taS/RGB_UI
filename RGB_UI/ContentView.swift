@@ -11,6 +11,8 @@ import SwiftUI
 struct ContentView: View {
     
     @State private var valueTextFieldRed = ""
+    @State private var valueTextFieldGreen = ""
+    @State private var valueTextFieldBlue = ""
     
     @State private var valueRed: Double = 73
     @State private var valueGreen: Double = 146
@@ -24,9 +26,9 @@ struct ContentView: View {
                 VStack {
                     BoxSlider(value: $valueRed, valueTextField: $valueTextFieldRed, colorTrack: .red)
                     
-                    BoxSlider(value: $valueGreen, valueTextField: $valueTextFieldRed, colorTrack: .green)
+                    BoxSlider(value: $valueGreen, valueTextField: $valueTextFieldGreen, colorTrack: .green)
                     
-                    BoxSlider(value: $valueBlue, valueTextField: $valueTextFieldRed, colorTrack: .blue)
+                    BoxSlider(value: $valueBlue, valueTextField: $valueTextFieldBlue, colorTrack: .blue)
                     Spacer()
                 }
                 .padding(.top, 32)

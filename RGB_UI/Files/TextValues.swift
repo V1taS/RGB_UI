@@ -16,6 +16,7 @@ struct TextValues: View {
         Text("\(lround(textValues))")
             .foregroundColor(.black)
             .frame(width: 70)
+            .font(.headline)
     }
 }
 
