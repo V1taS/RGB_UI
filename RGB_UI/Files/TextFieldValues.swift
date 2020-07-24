@@ -12,14 +12,12 @@ struct TextFieldValues: View {
     
     var placeHolderTextField: Double
     @Binding var valueTextField: String
-    
-    var editingChanged: (Bool)->() = { _ in }
+
     var commit: ()->() = { }
     
     var body: some View {
         TextField("\(lround(placeHolderTextField))",
             text: $valueTextField,
-            onEditingChanged: editingChanged,
             onCommit: commit)
             .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
             .overlay(RoundedRectangle(cornerRadius: 7).stroke(lineWidth: 2))
